@@ -8,6 +8,36 @@
     <title>Currency Exchange</title>
 </head>
 <body>
-    <script src="/src/scripts/main.js"></script>
+    <div class="page-content">
+        <h1 class="page-content-title">Currency exchange calculator</h1>
+
+        <div class="page-content-list">
+            <label for="from">From:</label>
+
+            <select id="from">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="PLN">PLN</option>
+            </select>
+
+            <input type="number" id="from-value">
+            <!-------->
+
+            <label for="to">To:</label>
+
+            <select id="to">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="PLN">PLN</option>
+            </select>
+
+            <input type="number" id="to-value">
+        </div>
+
+        <input type="button" id="submit" value="Convert">
+
+    </div>
+    
+    <script src="/src/scripts/main.js" />
 </body>
 </html>
