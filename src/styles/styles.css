@@ -1,3 +1,19 @@
+/* general styling */
+
+.font {
+    font-family: 'Saira', sans-serif;
+
+    color: #17245e;
+}
+
+.button {
+    min-width: 20%;
+
+    margin-left: 40%;
+}
+
+/* page styling */
+
 .page {
     display: flex;
     justify-content: center;
@@ -6,12 +22,22 @@
 .page-content {
     border-style: solid;
     border-color: #2b43b1;
-    border: 2px;
     border-radius: 25px;
 
     background-color: #b9c3ee;
+
+    padding: 5px;
 }
 
-.font {
-    font-family: 'Saira', sans-serif;
+.page-content-title {
+    text-align: center;
+}
+
+/* footer styling */
+
+.footer {
+    background-color: #b9c3ee;
+
+    display: flex;
+    justify-content: center;
 }
