@@ -17,6 +17,7 @@
 .page {
     display: flex;
     justify-content: center;
+    margin-top: 10%;
 }
 
 .page-content {
@@ -30,6 +31,13 @@
 }
 
 .page-content-title {
+    text-align: center;
+}
+
+.page-content-list {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+
     text-align: center;
 }
 
