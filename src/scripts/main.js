@@ -11,16 +11,14 @@ const submitButton = document.getElementById("submit");
 
 const apiKey = '95d27d6cedc8c320cba92066';
 
-const getData = (valueOne, valueTwo, key = apiKey) => {
+const fetchData = (valueOne, valueTwo, key = apiKey) => {
 
     return fetch(`https://v6.exchangerate-api.com/v6/${key}/pair/${valueOne}/${valueTwo}`).then( ( respond ) => { return respond.json() } );
 
 }
 
-async function logData() {
-    const logTest = await getData("PLN", "USD");
+async function getData(firstCurrency, secondCurrency) {
+    const respond = await fetchData(firstCurrency, secondCurrency).conversion_rate;
 
-    console.log(logTest);
+    return respond;
 }
-
-logData();
