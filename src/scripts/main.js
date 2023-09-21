@@ -22,3 +22,7 @@ async function getData(firstCurrency, secondCurrency) {
 
     return respond;
 }
+
+//check correction
+
+const areDifferent = (firstValue, secondValue) => firstValue !== secondValue;
