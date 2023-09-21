@@ -18,7 +18,8 @@ const fetchData = (valueOne, valueTwo, key = apiKey) => {
 }
 
 async function getData(firstCurrency, secondCurrency) {
-    const respond = await fetchData(firstCurrency, secondCurrency).conversion_rate;
+    const response = await fetchData(firstCurrency, secondCurrency);
+    const respond = response.conversion_rate;
 
     return respond;
 }
@@ -26,3 +27,25 @@ async function getData(firstCurrency, secondCurrency) {
 //check correction
 
 const areDifferent = (firstValue, secondValue) => firstValue !== secondValue;
+
+//button listener
+
+submitButton.addEventListener("click", async () => {
+
+    const firstCurrency = fromMenu.value;
+    const secondCurrency = toMenu.value;
+
+    if (areDifferent(firstCurrency, secondCurrency)) {
+
+        const result = await getData(firstCurrency, secondCurrency);
+        const inputValue = parseFloat(fromValue.value);
+        const convertedValue = result*inputValue;
+
+        toValue.value = convertedValue.toFixed(2);
+
+    } else {
+
+        toValue.value = fromValue.value;
+
+    }
+})
