@@ -6,8 +6,8 @@ Very simple exchange rate calculator, which uses https://www.exchangerate-api.co
 
 https://pasiastazebra.github.io/exchangerate/
 
+### Very important note
 >[!WARNING]
->### Very important note
 >Due to fact, that I'm not into backend right now, I used API key on the front side and I'm getting data directly from the API.
 >**DO NOT USE YOUR API KEY LIKE THAT**<sup>and it would be nice, if you won't overload my request limit lmao</sup>
 
